@@ -10,6 +10,17 @@ public class Maincontroller {
     public void index(){
         // 얘는 서버 안에서 출력됨.
         System.out.println("Home page requested");
+        this.contact();
+    }
+    @GetMapping("/about")
+    public void about() {
+        System.out.println("about");
+        this.contact();
+    }
+
+    public void contact() {
+        // 얘는 맵핑이 없으니 손님용 아님.
+        System.out.println("contact");
     }
 
 }
