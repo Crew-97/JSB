@@ -2,6 +2,7 @@ package com.mysite.first;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class Maincontroller {
@@ -9,13 +10,16 @@ public class Maincontroller {
     @GetMapping("/First")
     public void index(){
         // 얘는 서버 안에서 출력됨.
+        // 실제로 고객이 볼수는 없음
         System.out.println("Home page requested");
         this.contact();
     }
     @GetMapping("/about")
-    public void about() {
+    @ResponseBody
+    //이건 고객한테 출력!
+    public String about() {
         System.out.println("about");
-        this.contact();
+        return "안녕하세용";
     }
 
     public void contact() {
