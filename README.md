@@ -2,7 +2,7 @@
 
 Spring Boot에서 **URL 매핑, 서버 로그와 HTTP 응답의 차이, `@ResponseBody`의 역할**을 살펴보는 기초 실습입니다.
 
-[GitHub 프로필](https://github.com/Crew-97) · [포트폴리오](https://dorian-insect-dbd.notion.site/3d7f9416d0c981e09550c74daf722192)
+[GitHub 프로필](https://github.com/Crew-97)
 
 ## 코드에서 확인할 내용
 
